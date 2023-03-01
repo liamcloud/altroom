@@ -21,7 +21,7 @@ import va from "@vercel/analytics";
 const uploader = Uploader({
   apiKey: !!process.env.NEXT_PUBLIC_UPLOAD_API_KEY
     ? process.env.NEXT_PUBLIC_UPLOAD_API_KEY
-    : "free",
+    : "public_12a1xzeDaBtXjwntz4bu3eqWNeqx",
 });
 const options = {
   maxFileCount: 1,
