@@ -76,7 +76,7 @@ export default async function handler(
     let jsonFinalResponse = await finalResponse.json();
 
     if (jsonFinalResponse.status === "succeeded") {
-      restoredImage = jsonFinalResponse.output;
+      restoredImage = jsonFinalResponse.output[1];
     } else if (jsonFinalResponse.status === "failed") {
       break;
     } else {
